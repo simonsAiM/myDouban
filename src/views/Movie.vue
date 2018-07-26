@@ -9,7 +9,7 @@
     </section>
     <section>
       <header><h2>分类浏览</h2></header>
-      <types :types="movieTypes"></types>
+      <types :items="movieTypes"></types>
     </section>
     <download-app></download-app>
   </div>

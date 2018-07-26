@@ -28,7 +28,8 @@
                 default : ''
             },
             items : {
-                type : Array
+                type : Array,
+                required : true
             }
         },
         components:{

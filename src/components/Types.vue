@@ -2,7 +2,7 @@
   <section class="type-view">
       <section class="type-list">
           <ul class="content">
-              <li v-for="item in types">
+              <li v-for="item in items">
                   <a v-if="item.title" :href="item.href">
                       {{item.title}}<span class="arrow-right"></span>
                   </a>
@@ -18,7 +18,7 @@
             return{}
         },
         props : {
-            types : {
+            items : {
                 type : Array,
                 required : true
             }
@@ -33,7 +33,7 @@
             line-height 1.5em
         .type-list
             padding-top 10px
-            padding-bottom 10px
+            padding-bottom 20px
             padding-left 15px
             ul
                 display flex

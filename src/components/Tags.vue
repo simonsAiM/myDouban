@@ -44,8 +44,8 @@
                     display block
                     height 50px
                     line-height 50px
-                    font-size 14px
-                    padding-left 10px
-                    padding-right 10px
+                    font-size 15px
+                    padding-left 20px
+                    padding-right 20px
 </style>
 

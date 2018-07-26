@@ -1,14 +1,14 @@
 <template>
     <div class="list">
-        <a href="" class="list-item" v-for="list in lists">
+        <a href="" class="list-item" v-for="item in items">
             <div class="list-content">                    
-                <div v-if="list.image_hlarge" class="cover" :style="{'background':'url('+list.image_hlarge+') center no-repeat'}"><div class="cover-content"></div>
+                <div v-if="item.image_hlarge" class="cover" :style="{'background':'url('+item.image_hlarge+') center no-repeat'}"><div class="cover-content"></div>
                 </div>
-                <h3>{{list.title}}</h3>
-                <p>{{list.content}}</p>
+                <h3>{{item.title}}</h3>
+                <p>{{item.content}}</p>
             </div>
             <div class="author">by &nbsp;
-                <span class="name">{{list.category_name}}</span>
+                <span class="name">{{item.category_name}}</span>
             </div>
         </a>
     </div>
@@ -68,7 +68,7 @@
 export default {
     name: 'List',
     props: {
-        lists: {
+        items: {
             type: Array,
             required: true
         }
