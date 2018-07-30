@@ -16,7 +16,7 @@
         <a href="">使用豆瓣App</a>
       </li>
     </ul>
-    <List :lists="events"></List>
+    <List :items="events"></List>
     <Infinite-loading @infinite="onInfinite" force-use-inifinite-wrapper="true">
         <!--<loading slot="spinner"></loading>-->
         <span slot="no-more"> ---我们是有底线的--- </span>

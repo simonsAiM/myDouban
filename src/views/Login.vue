@@ -9,7 +9,7 @@
         </form>
         <div class="footer">
             <div class="register">
-                <a href="">登录注册</a>
+                <router-link :to="{ name : 'Register'}">登录注册</router-link>
                 <span>找回密码</span>
             </div>
         </div>
